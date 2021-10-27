@@ -11,12 +11,6 @@ import lgZoom from "lightgallery/plugins/zoom";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgFullscreen from "lightgallery/plugins/fullscreen";
 
-// import styles
-import "lightgallery/css/lightgallery-bundle.css";
-// import "lightgallery/css/lightgallery.css";
-// import "lightgallery/css/lg-zoom.css";
-// import "lightgallery/css/lg-thumbnail.css";
-
 @Component({
   tag: "mm-media-gallery",
   styleUrl: "mm-media-gallery.scss",
