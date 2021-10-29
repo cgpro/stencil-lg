@@ -23,6 +23,7 @@ export class MmMediaGallery {
   componentDidRender() {
     const gallery = lightGallery(this.el.querySelector(".lightgallery"), {
       plugins: [lgZoom, lgFullscreen, lgThumbnail],
+      selector: "a",
       speed: 500,
       licenseKey: "your_license_key",
       mode: "lg-fade",
@@ -39,18 +40,26 @@ export class MmMediaGallery {
     return (
       <Host>
         <slot />
-        <div class="lightgallery">
-          <a href="https://picsum.photos/id/0/768/288" data-lg-size="768-288">
-            <img alt=".." src="https://picsum.photos/id/0/200/100" />
+        <div class="lightgallery" id="lightgallery">
+          <a
+            href="https://picsum.photos/id/0/768/288"
+            data-slide-name="fading-light"
+            data-lg-size="768-288"
+          >
+            <img alt="some alt tag" src="https://picsum.photos/id/0/200/100" />
+          </a>
+          <a
+            href="https://picsum.photos/id/0/768/288"
+            data-slide-name="Bowness Bay"
+            data-lg-size="768-288"
+          >
+            <img alt="some alt tag" src="https://picsum.photos/id/0/200/100" />
           </a>
           <a href="https://picsum.photos/id/0/768/288" data-lg-size="768-288">
-            <img alt=".." src="https://picsum.photos/id/0/200/100" />
+            <img alt="some alt tag" src="https://picsum.photos/id/0/200/100" />
           </a>
           <a href="https://picsum.photos/id/0/768/288" data-lg-size="768-288">
-            <img alt=".." src="https://picsum.photos/id/0/200/100" />
-          </a>
-          <a href="https://picsum.photos/id/0/768/288" data-lg-size="768-288">
-            <img alt=".." src="https://picsum.photos/id/0/200/100" />
+            <img alt="some alt tag" src="https://picsum.photos/id/0/200/100" />
           </a>
         </div>
       </Host>
